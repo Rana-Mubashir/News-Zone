@@ -1,10 +1,10 @@
 import React from 'react';
-
+import defaultImage from '../images/news.png'
 const NewsCard = ({ imageUrl, image, title, description, url }) => {
   return (
     <div className="bg-gray-800 rounded-lg shadow-lg p-4 w-96">
       <img
-        src={imageUrl ? imageUrl : image}
+        src={imageUrl || defaultImage}
         alt="news-image"
         className="h-40 w-full object-cover rounded-t-lg text-white"
       />
